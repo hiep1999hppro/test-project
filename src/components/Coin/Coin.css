@@ -1,0 +1,13 @@
+.coin-container {
+  background-color: #F3BA2F;
+  padding: 6px;
+  border-radius: 50%;
+  display: inline;
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.coin-img {
+  position: relative;
+  top: 4px;
+}

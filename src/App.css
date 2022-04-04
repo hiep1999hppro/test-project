@@ -1,0 +1,182 @@
+.App {
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #414141;
+  padding: 80px 160px;
+}
+
+.App > h1, .App > h3 {
+  text-align: center;
+}
+
+.App > h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #FCFCFD;
+  line-height: 63.84px;
+  letter-spacing: -0.005em;
+  margin-bottom: 12px;
+}
+
+.App > h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #E0E0E0;
+  line-height: 27.6px;
+  letter-spacing: 0.0075em;
+}
+
+.moneycount-list {
+  width: 100%;
+  margin-block: 72px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.moneycount-item {
+
+}
+
+.moneycount-item-label {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.moneycount-item-text {
+  font-size: 20px;
+  line-height: 27.6px;
+  font-weight: 500;
+  letter-spacing: 0.0075em;
+  margin-left: 12px;
+}
+
+.moneycount-item-text--total {
+  color: #F0D042;
+}
+
+.moneycount-item-text--avgblock {
+  color: #31B4D9;
+}
+
+.moneycount-item-text--avgeth {
+  color: #1F8B24;
+}
+
+.moneycount-item-num {
+  font-size: 48px;
+  line-height: 63.84px;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  color: #FCFCFD;
+  text-align: center;
+}
+
+.card-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 0
+}
+
+.show-more-btn {
+  border: 2px solid #C0C0C0;
+  outline: none;
+  padding: 16px 25px;
+  margin-top: 88px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color:#F4F5F6;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .5s;
+}
+
+.show-more-btn:hover {
+  background-color: #F4F5F6;
+  color: #414141;
+}
+
+/* PC */
+@media screen and (max-width: 1159px) {
+  .App {
+    padding: 60px 120px;
+  }
+
+  .card-list {
+    gap: 20px 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .App {
+    padding: 40px 90px;
+  }
+
+  .moneycount-list {
+    flex-wrap: wrap;
+    margin-block: 42px;
+  }
+
+  .moneycount-item {
+    margin-top: 30px;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 767px) {
+  .App {
+    padding-inline: 60px;
+  }
+
+  .App > h1 {
+    font-size: 44px;
+  }
+
+  .moneycount-item {
+    margin-top: 25px;
+  }
+
+  .show-more-btn {
+    margin-top: 60px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 479px) {
+  .App {
+    padding-inline: 30px;
+  }
+
+  .App > h1 {
+    font-size: 32px;
+    line-height: 43px;
+  }
+
+  .moneycount-list {
+    margin-block: 20px;
+  }
+
+  .moneycount-item {
+    margin-top: 20px;
+  }
+
+  .moneycount-item-text {
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  .moneycount-item-num {
+    font-size: 29px;
+    line-height: 43px;
+  }
+
+  .show-more-btn {
+    margin-top: 40px;
+  }
+}
